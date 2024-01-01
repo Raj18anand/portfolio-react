@@ -5,9 +5,9 @@ import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import codecanvas from "../../Assets/Projects/Codecanvas html.png";
+import movies from "../../Assets/Projects/movies.png";
+import github from "../../Assets/Projects/Github.png";
 
 function Projects() {
   return (
@@ -17,33 +17,44 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "black" }}>
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={codecanvas}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="CodeCanvas"
+              description="Frontend Code Editor which renders HTML/CSS/JS code realtime. Built with React.js."
+              ghLink="https://github.com/Raj18anand/frontend-code-editor"
+              demoLink="https://main.dhwntbqr3oxgr.amplifyapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={movies}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="MovieReview"
+              description="Web application that allows users to post and read reviews of movies. The application is built using the Spring Boot framework for the backend, ReactJS for the frontend, and MongoDB as the database."
+              ghLink="https://github.com/Raj18anand/Movie-Review-Application"
+              // demoLink="https://main.dhwntbqr3oxgr.amplifyapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={github}
+              isBlog={false}
+              title="More Projects Coming..."
+              description="Adding more after making them live."
+              ghLink="https://github.com/Raj18anand?tab=repositories"
+              // demoLink="https://blogs.soumya-jit.tech/"
+            />
+          </Col>
+
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
               isBlog={false}
@@ -86,7 +97,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
