@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
+import lungNodule from "../../Assets/Projects/lung nodule.png";
 import codecanvas from "../../Assets/Projects/Codecanvas html.png";
 import movies from "../../Assets/Projects/movies.png";
 import github from "../../Assets/Projects/Github.png";
@@ -45,6 +45,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={lungNodule}
+              isBlog={false}
+              title="Lung Nodule Classification"
+              description="Classified Nodules and Non nodules in LIDC-IDRI and LNDB dataset using Deep learning and CNN model. Achieved an accuracy of 91% in LIDC-IDRI and 93% in LNDB dataset."
+              ghLink="https://github.com/Raj18anand/Movie-Review-Application"
+              // demoLink="https://main.dhwntbqr3oxgr.amplifyapp.com/"
+            />
+          </Col>
+
+          {/* <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={github}
               isBlog={false}
               title="More Projects Coming..."
@@ -52,7 +63,7 @@ function Projects() {
               ghLink="https://github.com/Raj18anand?tab=repositories"
               // demoLink="https://blogs.soumya-jit.tech/"
             />
-          </Col>
+          </Col> */}
 
           {/* <Col md={4} className="project-card">
             <ProjectCard
