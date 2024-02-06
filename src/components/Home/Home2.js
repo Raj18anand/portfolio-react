@@ -11,6 +11,12 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode, SiMedium } from "react-icons/si";
+import Projects from "../Projects/Projects";
+import Particle from "../Particle";
+import movies from "../../Assets/Projects/movies.png";
+import snakegame from "../../Assets/Projects/snake-game.png";
+import lungNodule from "../../Assets/Projects/lung nodule.png";
+import ProjectCards from "../Projects/ProjectCards";
 
 function Home2() {
   return (
@@ -31,6 +37,56 @@ function Home2() {
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
+        </Row>
+        <Row>
+        <Container fluid style={{paddingTop:"20px"}}>
+      <Particle />
+      <Container>
+        <h1 className="project-heading">
+          My Recent <strong className="purple">Works </strong>
+        </h1>
+        <p style={{ color: "black" }}>
+          Here are a few projects I've worked on recently.
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={movies}
+              isBlog={false}
+              title="MovieReview"
+              description="Web application that allows users to post and read reviews of movies. The application is built using the Spring Boot framework for the backend, ReactJS for the frontend, and MongoDB as the database."
+              ghLink="https://github.com/Raj18anand/Movie-Review-Application"
+              // demoLink="https://main.dhwntbqr3oxgr.amplifyapp.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={snakegame}
+              isBlog={false}
+              title="Snake Game"
+              description="Classic Snake Game built using HTML/CSS/Javascript"
+              ghLink="https://github.com/Raj18anand/snake-game"
+              demoLink="https://raj18anand.github.io/snake-game/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={lungNodule}
+              isBlog={false}
+              title="Lung Nodule Classification"
+              description="Classified Nodules and Non nodules in LIDC-IDRI and LNDB dataset using Deep learning and CNN model. Achieved an accuracy of 91% in LIDC-IDRI and 93% in LNDB dataset."
+              ghLink="https://github.com/Raj18anand/Movie-Review-Application"
+              // demoLink="https://main.dhwntbqr3oxgr.amplifyapp.com/"
+            />
+          </Col>
+
+
+
+        </Row>
+      </Container>
+    </Container>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">

@@ -8,6 +8,9 @@ import lungNodule from "../../Assets/Projects/lung nodule.png";
 import codecanvas from "../../Assets/Projects/Codecanvas html.png";
 import movies from "../../Assets/Projects/movies.png";
 import github from "../../Assets/Projects/Github.png";
+import shadowdog from "../../Assets/Projects/shadow-dog-animation.png"
+import parallaxbg from "../../Assets/Projects/parallax-backgrounds.png"
+import snakegame from "../../Assets/Projects/snake-game.png"
 
 function Projects() {
   return (
@@ -15,12 +18,34 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "black" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={movies}
+              isBlog={false}
+              title="MovieReview"
+              description="Web application that allows users to post and read reviews of movies. The application is built using the Spring Boot framework for the backend, ReactJS for the frontend, and MongoDB as the database."
+              ghLink="https://github.com/Raj18anand/Movie-Review-Application"
+              // demoLink="https://main.dhwntbqr3oxgr.amplifyapp.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={snakegame}
+              isBlog={false}
+              title="Snake Game"
+              description="Classic Snake Game built using HTML/CSS/Javascript"
+              ghLink="https://github.com/Raj18anand/snake-game"
+              demoLink="https://raj18anand.github.io/snake-game/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={codecanvas}
@@ -34,10 +59,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={movies}
+              imgPath={lungNodule}
               isBlog={false}
-              title="MovieReview"
-              description="Web application that allows users to post and read reviews of movies. The application is built using the Spring Boot framework for the backend, ReactJS for the frontend, and MongoDB as the database."
+              title="Lung Nodule Classification"
+              description="Classified Nodules and Non nodules in LIDC-IDRI and LNDB dataset using Deep learning and CNN model. Achieved an accuracy of 91% in LIDC-IDRI and 93% in LNDB dataset."
               ghLink="https://github.com/Raj18anand/Movie-Review-Application"
               // demoLink="https://main.dhwntbqr3oxgr.amplifyapp.com/"
             />
@@ -45,12 +70,23 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={lungNodule}
+              imgPath={shadowdog}
               isBlog={false}
-              title="Lung Nodule Classification"
-              description="Classified Nodules and Non nodules in LIDC-IDRI and LNDB dataset using Deep learning and CNN model. Achieved an accuracy of 91% in LIDC-IDRI and 93% in LNDB dataset."
-              ghLink="https://github.com/Raj18anand/Movie-Review-Application"
-              // demoLink="https://main.dhwntbqr3oxgr.amplifyapp.com/"
+              title="Shadow Dog"
+              description="Different kind of animations of a character with different speed. Built with Vanilla Javascript."
+              ghLink="https://github.com/Raj18anand/shadow-dog-animations"
+              demoLink="https://raj18anand.github.io/shadow-dog-animations/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={parallaxbg}
+              isBlog={false}
+              title="Parallax Backgrounds"
+              description="Parallax Backgrounds means Frontline background moves at different speed than backline background. Built with Vanilla Javascript."
+              ghLink="https://github.com/Raj18anand/parallax-background"
+              demoLink="https://raj18anand.github.io/parallax-background/"
             />
           </Col>
 
